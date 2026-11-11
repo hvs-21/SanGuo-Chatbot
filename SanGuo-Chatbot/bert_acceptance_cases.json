@@ -1,0 +1,14 @@
+[
+  {"query":"玄德同云长有何交集？","parser":"bert","sources":["F00015"],"answer":"结义兄弟"},
+  {"query":"翼德同华雄是经由谁联系的？","parser":"bert","sources":["F00017","F00167"],"answer":"经由关羽"},
+  {"query":"云长斩杀华雄是第几回？","parser":"bert","sources":["F00167"],"answer":"第5回"},
+  {"query":"华雄被云长斩杀是在什么时间？","parser":"bert","sources":["F00167"],"answer":"第五回叙事阶段"},
+  {"query":"华雄遭何人杀死的？","parser":"bert","sources":["F00167"],"answer":"关羽"},
+  {"query":"云长曾斩杀哪几位？","parser":"bert","sources":["F00022","F00167","F00402","F00430","F00432"],"answer":"程远志"},
+  {"query":"想听听孟德的事迹","parser":"bert","sources":["F00030","F00031","F00032","F00033","F00034"],"answer":"曹操"},
+  {"query":"云长被华雄杀死是哪回？","parser":"bert","sources":[],"answer":"资料不足"},
+  {"query":"玄德同云长在徐州时有何交情？","parser":"","sources":[],"answer":"资料不足"},
+  {"query":"刘备和关羽的关系有多亲密？","parser":"","sources":[],"answer":"资料不足"},
+  {"query":"华雄用过什么手机？","parser":"","sources":[],"answer":"资料不足"},
+  {"query":"玄德和云长有没有亲属关系？","parser":"","sources":[],"answer":"资料不足"}
+]

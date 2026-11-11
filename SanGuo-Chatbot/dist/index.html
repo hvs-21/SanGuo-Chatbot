@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="基于三国演义事实与原文片段的本地问答演示">
+  <title>三国问答 · SanGuo Chatbot</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand"><span class="seal" aria-hidden="true">三</span><div><strong>三国问答</strong><small>SANGUO CHATBOT</small></div></div>
+      <span id="connection" class="badge">本地演示</span>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">《三国演义》 · SRTP 项目</p>
+      <h1 id="title">循原文，问三国</h1>
+      <p>查人物关系、故事发生的阶段，或者直接找原文片段。每条记录都保留出处。</p>
+    </section>
+
+    <section class="workbench" aria-label="问答操作台">
+      <div class="panel composer">
+        <div class="mode-buttons" role="group" aria-label="查询模式">
+          <button type="button" data-mode="qa" aria-pressed="true">事实问答</button>
+          <button type="button" data-mode="search" aria-pressed="false">证据片段</button>
+          <button type="button" data-mode="corpus" aria-pressed="false">全文检索</button>
+          <button type="button" data-mode="community" aria-pressed="false">社区检索</button>
+          <button type="button" data-mode="completion" aria-pressed="false">历史补全</button>
+        </div>
+        <form id="query-form">
+          <label id="query-label" for="query">你的问题</label>
+          <textarea id="query" name="query" rows="3" maxlength="200" required aria-describedby="query-hint" placeholder="例如：刘备和关羽在桃园结义阶段是什么关系？"></textarea>
+          <p id="query-hint" class="hint">可查人物关系、事件和发生阶段，例如“云长何时斩杀华雄？”。</p>
+          <div class="actions">
+            <div id="qwen-option" class="qwen-option">
+              <label><input id="use-qwen" type="checkbox" disabled> 用千问整理</label>
+              <small id="qwen-hint">默认仅使用本地数据。</small>
+            </div>
+            <button id="submit" type="submit" class="primary">提问</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="panel examples" aria-labelledby="examples-title">
+        <h2 id="examples-title">试一个问题</h2>
+        <button type="button" class="example" data-example-mode="qa" data-query="刘备和关羽在桃园结义阶段是什么关系？"><span>人物关系</span>刘备和关羽在桃园结义阶段是什么关系？</button>
+        <button type="button" class="example" data-example-mode="qa" data-query="刘备和关羽什么时候结义？"><span>故事时间</span>刘备和关羽什么时候结义？</button>
+        <button type="button" class="example" data-example-mode="qa" data-query="谁斩杀了华雄？"><span>事件查询</span>谁斩杀了华雄？</button>
+        <button type="button" class="example" data-example-mode="search" data-query="刘备 既结为兄弟"><span>证据片段</span>刘备　既结为兄弟</button>
+        <button type="button" class="example" data-example-mode="corpus" data-query="第98回 王双 魏延"><span>全文检索</span>第98回　王双　魏延</button>
+        <button type="button" class="example" data-example-mode="completion" data-query="第6回，徐荣追击了谁？"><span>历史补全</span>第6回，徐荣追击了谁？</button>
+      </aside>
+    </section>
+
+    <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    <article id="result" class="panel result" hidden aria-labelledby="answer-title">
+      <header class="answer-header"><h2 id="answer-title">回答</h2><span class="badge" id="method"></span></header>
+      <p class="answer" id="answer"></p>
+      <p class="hint" id="notice" hidden></p>
+      <section id="source-section" aria-labelledby="source-title" hidden>
+        <h3 id="source-title">依据与出处</h3>
+        <ol id="sources" class="sources"></ol>
+      </section>
+      <section id="completion-section" aria-labelledby="completion-title" hidden>
+        <h3 id="completion-title">RE-GCN 候选与核验</h3>
+        <p id="completion-note" class="hint"></p>
+        <ol id="completion-candidates" class="sources"></ol>
+      </section>
+    </article>
+    <section class="panel prediction-panel" aria-labelledby="prediction-title">
+      <header class="answer-header"><h2 id="prediction-title">外推验证 · 已保存的案例</h2><span class="badge">验证集 · 离线案例</span></header>
+      <p>把它当作一道填空题：把记录中的一个对象遮住，让模型根据此前的关系记录猜答案。再揭晓数据集答案，检查它猜中了没有。</p>
+      <p class="hint">查事实是在资料里找已有答案；模型预测是给可能的答案排序。这个实验用于检验模型补全关系的能力，候选不能直接作为问答系统的事实依据。</p>
+      <button id="try-live-completion" type="button" class="primary" data-example-mode="completion" data-query="第6回，徐荣追击了谁？">运行实时历史补全示例</button>
+      <p id="live-completion-status" class="hint">实时补全会单独显示候选和原文核验结果。</p>
+      <p id="prediction-status" class="hint" role="status">正在读取预测案例…</p>
+      <div id="prediction-content" hidden>
+        <label for="prediction-case">选择一个预测问题</label>
+        <select id="prediction-case" aria-describedby="prediction-hint"></select>
+        <p id="prediction-hint" class="hint">候选来自已保存的外推实验。揭晓答案只标出该题是否命中。要重新运行模型，请点击上方的实时历史补全示例。</p>
+        <p id="prediction-question" class="answer" aria-live="polite"></p>
+        <div id="prediction-models" class="prediction-grid" aria-live="polite"></div>
+        <button id="reveal-answer" type="button" class="primary" aria-expanded="false" aria-controls="prediction-answer">揭晓数据集答案</button>
+        <div id="prediction-answer" class="source" hidden aria-live="polite"></div>
+        <p class="hint">按模型内部得分排序，不过滤已知答案。名次不代表正确率，两模型的得分不能直接比较。</p>
+      </div>
+    </section>
+    <footer class="footer">事实问答引用已收录的原文；模型预测用于实验观察，不能当作史实或最终测试成绩。</footer>
+  </main>
+</body>
+</html>

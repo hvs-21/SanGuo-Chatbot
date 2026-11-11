@@ -1,0 +1,16 @@
+{
+  "protocol_sha256": "63bda54128fd7006b08a89ac1de3cdb48c847497b75a1689d75b49ac811a69c8",
+  "test_sha256": "a7de9ca2a383dd804f55924566b3344d33436aad8aee2eabe0937aa886306e4e",
+  "checkpoints": {
+    "regcn": {
+      "42": "dd4a84cef80f6883e00630c1fc84f1ae9b7944801fa4de64f2013b659f74f0b0",
+      "43": "18a14e3f089993017a495cc461cc2e901225edbbfd211539a3308970ed102b38",
+      "44": "df196195e2cc5a76dad8b10d44ef45b66d09be57b0fb5ffa0ae5834d1632cf1b"
+    },
+    "tirgn": {
+      "42": "8c7a7a84fdcad0cbe32dc33fc0430b43b2c236b80bdd88a1763c262d03f0300c",
+      "43": "779f1cd8653447584679ee35d829dc8177d0a82360166d6aed82a6b9f489712e",
+      "44": "a59ea8a5e6225584db89fb32cb5c5daa1bb7bda5edceb06866efdd21597c9942"
+    }
+  }
+}

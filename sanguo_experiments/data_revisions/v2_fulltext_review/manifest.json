@@ -1,0 +1,385 @@
+{
+  "status": "review_candidate",
+  "base": "v1_review_candidate",
+  "train_before": 573,
+  "train_after": 574,
+  "valid_rows": 29,
+  "additions": [
+    {
+      "id": "B001",
+      "head": "曹操",
+      "relation": "到达",
+      "tail": "颍川",
+      "time_id": "T004",
+      "quadruple": [
+        23,
+        6,
+        22,
+        3
+      ],
+      "decision": "include_in_candidate",
+      "reason": "上下文主语是曹操，与下文实际参战一致。",
+      "evidence": {
+        "chapter": 1,
+        "start_line": 179,
+        "end_line": 179,
+        "anchor": "前來潁川助戰",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      }
+    },
+    {
+      "id": "B002",
+      "head": "华雄",
+      "relation": "追击",
+      "tail": "孙坚",
+      "time_id": "T012",
+      "quadruple": [
+        103,
+        5,
+        35,
+        11
+      ],
+      "decision": "include_in_candidate",
+      "reason": "换头巾之前，华雄追的是孙坚及随行的祖茂。",
+      "evidence": {
+        "chapter": 5,
+        "start_line": 821,
+        "end_line": 821,
+        "anchor": "祖茂跟定孫堅，突圍而走。背後華雄追來",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      }
+    },
+    {
+      "id": "B003",
+      "head": "华雄",
+      "relation": "追击",
+      "tail": "祖茂",
+      "time_id": "T012",
+      "quadruple": [
+        103,
+        5,
+        107,
+        11
+      ],
+      "decision": "include_in_candidate",
+      "reason": "换头巾后，祖茂引开追兵。",
+      "evidence": {
+        "chapter": 5,
+        "start_line": 824,
+        "end_line": 824,
+        "anchor": "祖茂被華雄追急",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      }
+    },
+    {
+      "id": "B004",
+      "head": "华雄",
+      "relation": "击败",
+      "tail": "孙坚",
+      "time_id": "T012",
+      "quadruple": [
+        103,
+        11,
+        35,
+        11
+      ],
+      "decision": "include_in_candidate",
+      "reason": "文台是孙坚。上文同时叙述孙坚军溃散、本人突围。",
+      "evidence": {
+        "chapter": 5,
+        "start_line": 830,
+        "end_line": 830,
+        "anchor": "孫文臺敗於華雄之手",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      }
+    },
+    {
+      "id": "B005",
+      "head": "徐荣",
+      "relation": "追击",
+      "tail": "曹操",
+      "time_id": "T013",
+      "quadruple": [
+        173,
+        5,
+        23,
+        12
+      ],
+      "decision": "include_in_candidate",
+      "reason": "同段上下文明确被追者为曹操，曹洪与其一起脱逃。",
+      "evidence": {
+        "chapter": 6,
+        "start_line": 994,
+        "end_line": 994,
+        "anchor": "卻是徐榮從上流渡河來追",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "F00659",
+      "decision": "quarantine_train",
+      "reason": "引文描述曹操截击，无法支持张宝击败曹操。",
+      "evidence": {
+        "chapter": 1,
+        "start_line": 179,
+        "end_line": 179,
+        "anchor": "正值張梁、張寶敗走，曹操攔住",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      },
+      "original_record": {
+        "fact_id": "F00659",
+        "head_id": "E0020",
+        "head": "张宝",
+        "relation_id": "R020",
+        "relation": "击败",
+        "tail_id": "E0035",
+        "tail": "曹操",
+        "time_id": "T004",
+        "time_text": "《三国演义》第1回叙事快照",
+        "model_time_ready": "YES",
+        "source_chapter": "chapter_001",
+        "source_chunk": "",
+        "source_text": "正值张梁、张宝败走，曹操拦住，大杀一阵，斩首万余级，夺得旗旛、金鼓马匹极多。",
+        "review_status": "模型导向增强：严格规则通过",
+        "evidence_status": "已有实体+明确触发语+方向/距离检查通过",
+        "legacy_fact_id": "",
+        "quality_status": "",
+        "quality_note": ""
+      },
+      "quadruple": [
+        3,
+        11,
+        23,
+        3
+      ]
+    },
+    {
+      "id": "F00660",
+      "decision": "quarantine_train",
+      "reason": "攻打对象是阳城。皇甫嵩是后文探报所涉人物。正确对象已有 F00047。",
+      "evidence": {
+        "chapter": 2,
+        "start_line": 229,
+        "end_line": 229,
+        "anchor": "朱雋引兵圍住陽城攻打",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      },
+      "original_record": {
+        "fact_id": "F00660",
+        "head_id": "E0033",
+        "head": "朱隽",
+        "relation_id": "R018",
+        "relation": "攻打",
+        "tail_id": "E0032",
+        "tail": "皇甫嵩",
+        "time_id": "T005",
+        "time_text": "《三国演义》第2回叙事快照",
+        "model_time_ready": "YES",
+        "source_chapter": "chapter_002",
+        "source_chunk": "",
+        "source_text": "朱隽引兵围住阳城攻打，一面差人打探皇甫嵩消息。",
+        "review_status": "模型导向增强：严格规则通过",
+        "evidence_status": "已有实体+明确触发语+方向/距离检查通过",
+        "legacy_fact_id": "",
+        "quality_status": "",
+        "quality_note": ""
+      },
+      "quadruple": [
+        21,
+        13,
+        20,
+        4
+      ]
+    },
+    {
+      "id": "F00661",
+      "decision": "quarantine_train",
+      "reason": "张飞是说话人。结合前文提首级的云长和紧接的诗，击杀者是关羽，已有 F00167。",
+      "evidence": {
+        "chapter": 5,
+        "start_line": 859,
+        "end_line": 859,
+        "anchor": "俺哥哥斬了華雄",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      },
+      "original_record": {
+        "fact_id": "F00661",
+        "head_id": "E0003",
+        "head": "张飞",
+        "relation_id": "R021",
+        "relation": "斩杀",
+        "tail_id": "E0121",
+        "tail": "华雄",
+        "time_id": "T012",
+        "time_text": "《三国演义》第5回叙事快照",
+        "model_time_ready": "YES",
+        "source_chapter": "chapter_005",
+        "source_chunk": "",
+        "source_text": "只见玄德背后转出张飞，高声大叫：「俺哥哥斩了华雄，不就这里杀入关去，活拏董卓，更待何时！",
+        "review_status": "模型导向增强：严格规则通过",
+        "evidence_status": "已有实体+明确触发语+方向/距离检查通过",
+        "legacy_fact_id": "",
+        "quality_status": "",
+        "quality_note": ""
+      },
+      "quadruple": [
+        11,
+        14,
+        103,
+        11
+      ]
+    },
+    {
+      "id": "F00662",
+      "decision": "quarantine_train",
+      "reason": "受救者为王匡。现有模型实体表未收录王匡，本批暂不编码替代关系。",
+      "evidence": {
+        "chapter": 5,
+        "start_line": 884,
+        "end_line": 884,
+        "anchor": "幸得喬瑁、袁遺兩軍皆至，來救王匡，呂布方退",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      },
+      "original_record": {
+        "fact_id": "F00662",
+        "head_id": "E0205",
+        "head": "乔瑁",
+        "relation_id": "R023",
+        "relation": "救援",
+        "tail_id": "E0107",
+        "tail": "吕布",
+        "time_id": "T012",
+        "time_text": "《三国演义》第5回叙事快照",
+        "model_time_ready": "YES",
+        "source_chapter": "chapter_005",
+        "source_chunk": "",
+        "source_text": "幸得乔瑁、袁遗两军皆至，来救王匡，吕布方退。",
+        "review_status": "模型导向增强：严格规则通过",
+        "evidence_status": "已有实体+明确触发语+方向/距离检查通过",
+        "legacy_fact_id": "",
+        "quality_status": "",
+        "quality_note": ""
+      },
+      "quadruple": [
+        177,
+        9,
+        89,
+        11
+      ]
+    },
+    {
+      "id": "F00703",
+      "decision": "confirm_valid_evidence",
+      "reason": "上下文明确王双引军追赶魏延。为既有验证事实补充全文定位。",
+      "evidence": {
+        "chapter": 98,
+        "start_line": 17326,
+        "end_line": 17326,
+        "anchor": "魏延休走",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      },
+      "original_record": {
+        "fact_id": "F00703",
+        "head_id": "E0430",
+        "head": "王双",
+        "relation_id": "R024",
+        "relation": "追击",
+        "tail_id": "E0342",
+        "tail": "魏延",
+        "time_id": "T_CH098",
+        "time_text": "《三国演义》第98回叙事快照",
+        "model_time_ready": "YES",
+        "source_chapter": "chapter_098",
+        "source_chunk": "",
+        "source_text": "早有细作报知王双，双大驱军马，并力追赶，追到二十余里，看看赶上，且魏延旗号在前，大叫曰：「魏延休走！",
+        "review_status": "模型导向增强：严格规则通过",
+        "evidence_status": "已有实体+明确触发语+方向/距离检查通过",
+        "legacy_fact_id": "",
+        "quality_status": "",
+        "quality_note": ""
+      }
+    },
+    {
+      "id": "F00704",
+      "decision": "keep_valid_quarantine",
+      "reason": "张翼德为张飞。说话人在回顾旧事，不能据此在第99回添加新交战事件。",
+      "evidence": {
+        "chapter": 99,
+        "start_line": 17489,
+        "end_line": 17489,
+        "anchor": "張翼德大戰張郃",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      },
+      "original_record": {
+        "fact_id": "F00704",
+        "head_id": "E0390",
+        "head": "张翼",
+        "relation_id": "R019",
+        "relation": "对战",
+        "tail_id": "E0288",
+        "tail": "张郃",
+        "time_id": "T_CH099",
+        "time_text": "《三国演义》第99回叙事快照",
+        "model_time_ready": "YES",
+        "source_chapter": "chapter_099",
+        "source_chunk": "",
+        "source_text": "英勇倍加，乃谓左右曰：「吾当闻张翼德大战张郃，人皆惊惧。",
+        "review_status": "模型导向增强：严格规则通过",
+        "evidence_status": "已有实体+明确触发语+方向/距离检查通过",
+        "legacy_fact_id": "",
+        "quality_status": "",
+        "quality_note": ""
+      }
+    },
+    {
+      "id": "A001",
+      "decision": "pending",
+      "reason": "确定何进调兵，执行擒获的主体口径仍待复核。",
+      "evidence": {
+        "chapter": 1,
+        "start_line": 75,
+        "end_line": 75,
+        "anchor": "何進調兵擒馬元義",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      }
+    },
+    {
+      "id": "A002",
+      "decision": "decline",
+      "reason": "截击和战损明确，无法按当前关系规范确认曹操击败张梁。",
+      "evidence": {
+        "chapter": 1,
+        "start_line": 180,
+        "end_line": 180,
+        "anchor": "張梁、張寶死戰得脫",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      }
+    },
+    {
+      "id": "A003",
+      "decision": "decline",
+      "reason": "同一处截击，无法按当前关系规范确认曹操击败张宝。",
+      "evidence": {
+        "chapter": 1,
+        "start_line": 180,
+        "end_line": 180,
+        "anchor": "張梁、張寶死戰得脫",
+        "source_url": "https://www.gutenberg.org/cache/epub/23950/pg23950.txt"
+      }
+    }
+  ],
+  "corpus_sha256": "ed422e10c16c19af7ca7b09ca0320012e60776b3d7cb054769b8f7d9a19aea7d",
+  "output_sha256": {
+    "train.txt": "031715696221e97d9002be8cabc19fe2b5d97ec8b708ac139528e35dc9a26f05",
+    "valid.txt": "7500d8ac4a59cffd95ddc0a7df9c5cdc7d45dfdd2a647af1a832f5dc973120dd",
+    "entity2id.txt": "24fd7a926b26e597752f0b72a5856f3ca036ede9ca8d817626dcf4512d1818da",
+    "relation2id.txt": "384920397dfc86a944b9deb86a6007c0efa59bbf51574cc3822a153d6f083928",
+    "stat.txt": "ba39ad6ca7ff5bc7ae6f991474f505dd70aa20973ca16dea4753266bf41e8342",
+    "entity_mapping.csv": "1d19d4298f9714df3eaf2a0cda02b496336ca36a21dc35b22c1e62809294752c",
+    "relation_mapping.csv": "6936cb92fd8df7765e475f4680c1da40e476b238095ce30f3451baa6895262f4",
+    "time_mapping.csv": "65d8a58ea5e731a9b02a624a8b95d7a1a98901530df6c3abfe23fb7e4bbdd19d",
+    "original_to_model_relation.csv": "2778f5957adf18dd75be27c288655e8896d1cdb0f2996fc583b6b8e037b7b37e"
+  }
+}

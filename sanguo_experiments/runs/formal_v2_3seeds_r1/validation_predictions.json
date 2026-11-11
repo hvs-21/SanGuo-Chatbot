@@ -1,0 +1,2136 @@
+{
+  "schema_version": 1,
+  "split": "valid",
+  "task": "tail_prediction",
+  "protocol": "single_step_raw",
+  "top_k": 5,
+  "input_sha256": {
+    "train.txt": "7eb25df4c95d93221fe8f03be9ed62ab51371bcaa74f54f7e11b3d83c36e4f5d",
+    "valid.txt": "12fd656c571a1e3be2f25cf130a9d62f5ca1cb72010b6678f2bca1d0a1549d1a",
+    "entity2id.txt": "24fd7a926b26e597752f0b72a5856f3ca036ede9ca8d817626dcf4512d1818da",
+    "relation2id.txt": "384920397dfc86a944b9deb86a6007c0efa59bbf51574cc3822a153d6f083928",
+    "stat.txt": "ba39ad6ca7ff5bc7ae6f991474f505dd70aa20973ca16dea4753266bf41e8342",
+    "entity_mapping.csv": "1d19d4298f9714df3eaf2a0cda02b496336ca36a21dc35b22c1e62809294752c",
+    "relation_mapping.csv": "6936cb92fd8df7765e475f4680c1da40e476b238095ce30f3451baa6895262f4",
+    "time_mapping.csv": "65d8a58ea5e731a9b02a624a8b95d7a1a98901530df6c3abfe23fb7e4bbdd19d",
+    "original_to_model_relation.csv": "2778f5957adf18dd75be27c288655e8896d1cdb0f2996fc583b6b8e037b7b37e"
+  },
+  "models": {
+    "tirgn": {
+      "best_epoch": 1,
+      "filtered_entity_mrr": 0.14849038422107697,
+      "checkpoint_sha256": "3b03c3c60f776b95fa5d7f5a629e608885dbe528aad145590ef71ff467bb4577",
+      "seed": 42
+    },
+    "regcn": {
+      "best_epoch": 1,
+      "filtered_entity_mrr": 0.12004372477531433,
+      "checkpoint_sha256": "20f3c712ab4628d76a994b686048347c907d1159235e2035a6c0676137172914",
+      "seed": 42
+    }
+  },
+  "cases": [
+    {
+      "id": "293:4:104",
+      "head_id": 293,
+      "relation_id": 4,
+      "time_id": 104,
+      "head": "诸葛亮",
+      "relation": "资源变动",
+      "time": "《三国演义》第98回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 314,
+            "score": -2.5334014892578125,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 371,
+            "score": -3.3064937591552734,
+            "rank": 2,
+            "entity": "马谡"
+          },
+          {
+            "entity_id": 23,
+            "score": -3.6507697105407715,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 333,
+            "score": -3.8021321296691895,
+            "rank": 4,
+            "entity": "赵广"
+          },
+          {
+            "entity_id": 293,
+            "score": -3.9995551109313965,
+            "rank": 5,
+            "entity": "诸葛亮"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 314,
+            "score": 3.3408756256103516,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 374,
+            "score": 2.3774702548980713,
+            "rank": 2,
+            "entity": "曹休"
+          },
+          {
+            "entity_id": 332,
+            "score": 2.3579306602478027,
+            "rank": 3,
+            "entity": "赵统"
+          },
+          {
+            "entity_id": 78,
+            "score": 2.214853048324585,
+            "rank": 4,
+            "entity": "虎贲中郎将"
+          },
+          {
+            "entity_id": 375,
+            "score": 2.1073520183563232,
+            "rank": 5,
+            "entity": "牙门将"
+          }
+        ]
+      }
+    },
+    {
+      "id": "376:5:104",
+      "head_id": 376,
+      "relation_id": 5,
+      "time_id": 104,
+      "head": "王双",
+      "relation": "追击",
+      "time": "《三国演义》第98回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 314,
+            "score": -3.462026834487915,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 371,
+            "score": -3.7460262775421143,
+            "rank": 2,
+            "entity": "马谡"
+          },
+          {
+            "entity_id": 23,
+            "score": -3.9998574256896973,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.013055801391602,
+            "rank": 4,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 293,
+            "score": -4.268714427947998,
+            "rank": 5,
+            "entity": "诸葛亮"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 314,
+            "score": 3.6512513160705566,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 332,
+            "score": 3.051163911819458,
+            "rank": 2,
+            "entity": "赵统"
+          },
+          {
+            "entity_id": 374,
+            "score": 2.2204158306121826,
+            "rank": 3,
+            "entity": "曹休"
+          },
+          {
+            "entity_id": 371,
+            "score": 2.1105711460113525,
+            "rank": 4,
+            "entity": "马谡"
+          },
+          {
+            "entity_id": 8,
+            "score": 2.1023147106170654,
+            "rank": 5,
+            "entity": "刘备"
+          }
+        ]
+      }
+    },
+    {
+      "id": "291:14:104",
+      "head_id": 291,
+      "relation_id": 14,
+      "time_id": 104,
+      "head": "魏延",
+      "relation": "杀害",
+      "time": "《三国演义》第98回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 314,
+            "score": -3.651322364807129,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 371,
+            "score": -3.8876471519470215,
+            "rank": 2,
+            "entity": "马谡"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.2155256271362305,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 293,
+            "score": -4.229891777038574,
+            "rank": 4,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 333,
+            "score": -4.372550010681152,
+            "rank": 5,
+            "entity": "赵广"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 125,
+            "score": 1.9441978931427002,
+            "rank": 1,
+            "entity": "孙策"
+          },
+          {
+            "entity_id": 344,
+            "score": 1.6545101404190063,
+            "rank": 2,
+            "entity": "司马昭"
+          },
+          {
+            "entity_id": 371,
+            "score": 1.6208887100219727,
+            "rank": 3,
+            "entity": "马谡"
+          },
+          {
+            "entity_id": 186,
+            "score": 1.5607835054397583,
+            "rank": 4,
+            "entity": "吕公"
+          },
+          {
+            "entity_id": 4,
+            "score": 1.5570423603057861,
+            "rank": 5,
+            "entity": "张角"
+          }
+        ]
+      }
+    },
+    {
+      "id": "329:4:105",
+      "head_id": 329,
+      "relation_id": 4,
+      "time_id": 105,
+      "head": "姜维",
+      "relation": "资源变动",
+      "time": "《三国演义》第99回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 314,
+            "score": -2.4731013774871826,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 293,
+            "score": -2.6279964447021484,
+            "rank": 2,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 23,
+            "score": -3.273465871810913,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 333,
+            "score": -3.5186126232147217,
+            "rank": 4,
+            "entity": "赵广"
+          },
+          {
+            "entity_id": 13,
+            "score": -3.8010878562927246,
+            "rank": 5,
+            "entity": "关羽"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 314,
+            "score": 3.055371046066284,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 293,
+            "score": 2.500173330307007,
+            "rank": 2,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 376,
+            "score": 2.3943378925323486,
+            "rank": 3,
+            "entity": "王双"
+          },
+          {
+            "entity_id": 377,
+            "score": 2.28397536277771,
+            "rank": 4,
+            "entity": "建威"
+          },
+          {
+            "entity_id": 291,
+            "score": 2.2568016052246094,
+            "rank": 5,
+            "entity": "魏延"
+          }
+        ]
+      }
+    },
+    {
+      "id": "334:4:105",
+      "head_id": 334,
+      "relation_id": 4,
+      "time_id": 105,
+      "head": "王平",
+      "relation": "资源变动",
+      "time": "《三国演义》第99回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 314,
+            "score": -2.3263962268829346,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 293,
+            "score": -2.515145778656006,
+            "rank": 2,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 23,
+            "score": -3.237645149230957,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 333,
+            "score": -3.517307996749878,
+            "rank": 4,
+            "entity": "赵广"
+          },
+          {
+            "entity_id": 8,
+            "score": -3.73564076423645,
+            "rank": 5,
+            "entity": "刘备"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 314,
+            "score": 2.9487524032592773,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 293,
+            "score": 2.8433732986450195,
+            "rank": 2,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 376,
+            "score": 2.4738097190856934,
+            "rank": 3,
+            "entity": "王双"
+          },
+          {
+            "entity_id": 377,
+            "score": 2.3622114658355713,
+            "rank": 4,
+            "entity": "建威"
+          },
+          {
+            "entity_id": 8,
+            "score": 2.2013957500457764,
+            "rank": 5,
+            "entity": "刘备"
+          }
+        ]
+      }
+    },
+    {
+      "id": "293:11:105",
+      "head_id": 293,
+      "relation_id": 11,
+      "time_id": 105,
+      "head": "诸葛亮",
+      "relation": "击败",
+      "time": "《三国演义》第99回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 293,
+            "score": -3.3028719425201416,
+            "rank": 1,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 314,
+            "score": -3.7811832427978516,
+            "rank": 2,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 291,
+            "score": -3.983668565750122,
+            "rank": 3,
+            "entity": "魏延"
+          },
+          {
+            "entity_id": 333,
+            "score": -4.195346355438232,
+            "rank": 4,
+            "entity": "赵广"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.249329566955566,
+            "rank": 5,
+            "entity": "曹操"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 314,
+            "score": 2.818264961242676,
+            "rank": 1,
+            "entity": "陆逊"
+          },
+          {
+            "entity_id": 293,
+            "score": 2.3554537296295166,
+            "rank": 2,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 376,
+            "score": 2.2667288780212402,
+            "rank": 3,
+            "entity": "王双"
+          },
+          {
+            "entity_id": 122,
+            "score": 1.9851831197738647,
+            "rank": 4,
+            "entity": "赵云"
+          },
+          {
+            "entity_id": 8,
+            "score": 1.9237736463546753,
+            "rank": 5,
+            "entity": "刘备"
+          }
+        ]
+      }
+    },
+    {
+      "id": "293:14:106",
+      "head_id": 293,
+      "relation_id": 14,
+      "time_id": 106,
+      "head": "诸葛亮",
+      "relation": "杀害",
+      "time": "《三国演义》第100回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 293,
+            "score": -3.7347209453582764,
+            "rank": 1,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 378,
+            "score": -4.32040548324585,
+            "rank": 2,
+            "entity": "阴平"
+          },
+          {
+            "entity_id": 334,
+            "score": -4.5345659255981445,
+            "rank": 3,
+            "entity": "王平"
+          },
+          {
+            "entity_id": 379,
+            "score": -4.60982608795166,
+            "rank": 4,
+            "entity": "武都"
+          },
+          {
+            "entity_id": 329,
+            "score": -4.66456413269043,
+            "rank": 5,
+            "entity": "姜维"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 334,
+            "score": 2.964630126953125,
+            "rank": 1,
+            "entity": "王平"
+          },
+          {
+            "entity_id": 329,
+            "score": 2.7591552734375,
+            "rank": 2,
+            "entity": "姜维"
+          },
+          {
+            "entity_id": 376,
+            "score": 2.7412495613098145,
+            "rank": 3,
+            "entity": "王双"
+          },
+          {
+            "entity_id": 122,
+            "score": 2.638702392578125,
+            "rank": 4,
+            "entity": "赵云"
+          },
+          {
+            "entity_id": 251,
+            "score": 2.6249189376831055,
+            "rank": 5,
+            "entity": "纪灵"
+          }
+        ]
+      }
+    },
+    {
+      "id": "335:14:107",
+      "head_id": 335,
+      "relation_id": 14,
+      "time_id": 107,
+      "head": "蜀军",
+      "relation": "杀害",
+      "time": "《三国演义》第101回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 293,
+            "score": -4.169609546661377,
+            "rank": 1,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.830533027648926,
+            "rank": 2,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.85969352722168,
+            "rank": 3,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 378,
+            "score": -4.924688339233398,
+            "rank": 4,
+            "entity": "阴平"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.9251227378845215,
+            "rank": 5,
+            "entity": "刘备"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 293,
+            "score": 2.555844783782959,
+            "rank": 1,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 380,
+            "score": 2.1199474334716797,
+            "rank": 2,
+            "entity": "陈式"
+          },
+          {
+            "entity_id": 378,
+            "score": 1.753042221069336,
+            "rank": 3,
+            "entity": "阴平"
+          },
+          {
+            "entity_id": 379,
+            "score": 1.5092213153839111,
+            "rank": 4,
+            "entity": "武都"
+          },
+          {
+            "entity_id": 198,
+            "score": 1.2599637508392334,
+            "rank": 5,
+            "entity": "太仆"
+          }
+        ]
+      }
+    },
+    {
+      "id": "330:3:108",
+      "head_id": 330,
+      "relation_id": 3,
+      "time_id": 108,
+      "head": "曹叡",
+      "relation": "任命",
+      "time": "《三国演义》第102回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 293,
+            "score": -3.3720524311065674,
+            "rank": 1,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.1246232986450195,
+            "rank": 2,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.170385837554932,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.349886417388916,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 335,
+            "score": -4.487807273864746,
+            "rank": 5,
+            "entity": "蜀军"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 241,
+            "score": 2.3925082683563232,
+            "rank": 1,
+            "entity": "张郃"
+          },
+          {
+            "entity_id": 335,
+            "score": 2.065607786178589,
+            "rank": 2,
+            "entity": "蜀军"
+          },
+          {
+            "entity_id": 293,
+            "score": 1.9053339958190918,
+            "rank": 3,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 8,
+            "score": 1.397537112236023,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 125,
+            "score": 1.2369625568389893,
+            "rank": 5,
+            "entity": "孙策"
+          }
+        ]
+      }
+    },
+    {
+      "id": "286:12:108",
+      "head_id": 286,
+      "relation_id": 12,
+      "time_id": 108,
+      "head": "司马懿",
+      "relation": "任职",
+      "time": "《三国演义》第102回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 293,
+            "score": -4.663674831390381,
+            "rank": 1,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 335,
+            "score": -5.185860633850098,
+            "rank": 2,
+            "entity": "蜀军"
+          },
+          {
+            "entity_id": 13,
+            "score": -5.243309020996094,
+            "rank": 3,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 8,
+            "score": -5.25649356842041,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 23,
+            "score": -5.279635906219482,
+            "rank": 5,
+            "entity": "曹操"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 22,
+            "score": 2.5003130435943604,
+            "rank": 1,
+            "entity": "颍川"
+          },
+          {
+            "entity_id": 192,
+            "score": 2.4332098960876465,
+            "rank": 2,
+            "entity": "后将军"
+          },
+          {
+            "entity_id": 345,
+            "score": 2.2869884967803955,
+            "rank": 3,
+            "entity": "文鸯"
+          },
+          {
+            "entity_id": 310,
+            "score": 2.233325719833374,
+            "rank": 4,
+            "entity": "吕蒙"
+          },
+          {
+            "entity_id": 303,
+            "score": 2.2041990756988525,
+            "rank": 5,
+            "entity": "张允"
+          }
+        ]
+      }
+    },
+    {
+      "id": "337:5:109",
+      "head_id": 337,
+      "relation_id": 5,
+      "time_id": 109,
+      "head": "廖化",
+      "relation": "追击",
+      "time": "《三国演义》第103回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 23,
+            "score": -3.977047920227051,
+            "rank": 1,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.0166730880737305,
+            "rank": 2,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.10966157913208,
+            "rank": 3,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 335,
+            "score": -4.185160160064697,
+            "rank": 4,
+            "entity": "蜀军"
+          },
+          {
+            "entity_id": 293,
+            "score": -4.369768142700195,
+            "rank": 5,
+            "entity": "诸葛亮"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 8,
+            "score": 2.544004440307617,
+            "rank": 1,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 241,
+            "score": 2.2522425651550293,
+            "rank": 2,
+            "entity": "张郃"
+          },
+          {
+            "entity_id": 286,
+            "score": 2.2272255420684814,
+            "rank": 3,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 330,
+            "score": 2.184847831726074,
+            "rank": 4,
+            "entity": "曹叡"
+          },
+          {
+            "entity_id": 67,
+            "score": 2.1224582195281982,
+            "rank": 5,
+            "entity": "袁绍"
+          }
+        ]
+      }
+    },
+    {
+      "id": "336:11:109",
+      "head_id": 336,
+      "relation_id": 11,
+      "time_id": 109,
+      "head": "张翼",
+      "relation": "击败",
+      "time": "《三国演义》第103回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 23,
+            "score": -3.9600799083709717,
+            "rank": 1,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 293,
+            "score": -4.186629772186279,
+            "rank": 2,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 335,
+            "score": -4.215081214904785,
+            "rank": 3,
+            "entity": "蜀军"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.243870735168457,
+            "rank": 4,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.251744270324707,
+            "rank": 5,
+            "entity": "刘备"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 330,
+            "score": 1.5322792530059814,
+            "rank": 1,
+            "entity": "曹叡"
+          },
+          {
+            "entity_id": 300,
+            "score": 1.473810076713562,
+            "rank": 2,
+            "entity": "大都督"
+          },
+          {
+            "entity_id": 286,
+            "score": 1.4662630558013916,
+            "rank": 3,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 212,
+            "score": 1.3863444328308105,
+            "rank": 4,
+            "entity": "杨奉"
+          },
+          {
+            "entity_id": 335,
+            "score": 1.3861219882965088,
+            "rank": 5,
+            "entity": "蜀军"
+          }
+        ]
+      }
+    },
+    {
+      "id": "337:11:109",
+      "head_id": 337,
+      "relation_id": 11,
+      "time_id": 109,
+      "head": "廖化",
+      "relation": "击败",
+      "time": "《三国演义》第103回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 23,
+            "score": -4.2090349197387695,
+            "rank": 1,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.319052219390869,
+            "rank": 2,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.348814487457275,
+            "rank": 3,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 293,
+            "score": -4.356344223022461,
+            "rank": 4,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 335,
+            "score": -4.419787406921387,
+            "rank": 5,
+            "entity": "蜀军"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 284,
+            "score": 2.450005054473877,
+            "rank": 1,
+            "entity": "袁军粮车"
+          },
+          {
+            "entity_id": 220,
+            "score": 2.396599292755127,
+            "rank": 2,
+            "entity": "张绣"
+          },
+          {
+            "entity_id": 293,
+            "score": 2.390634536743164,
+            "rank": 3,
+            "entity": "诸葛亮"
+          },
+          {
+            "entity_id": 8,
+            "score": 2.3233015537261963,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 305,
+            "score": 2.3094282150268555,
+            "rank": 5,
+            "entity": "陈应"
+          }
+        ]
+      }
+    },
+    {
+      "id": "329:5:110",
+      "head_id": 329,
+      "relation_id": 5,
+      "time_id": 110,
+      "head": "姜维",
+      "relation": "追击",
+      "time": "《三国演义》第104回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -3.257523775100708,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 13,
+            "score": -3.7407310009002686,
+            "rank": 2,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 23,
+            "score": -3.813836097717285,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 8,
+            "score": -3.8720486164093018,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 335,
+            "score": -4.02946662902832,
+            "rank": 5,
+            "entity": "蜀军"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 286,
+            "score": 3.611495018005371,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 336,
+            "score": 2.9000015258789062,
+            "rank": 2,
+            "entity": "张翼"
+          },
+          {
+            "entity_id": 8,
+            "score": 2.416128635406494,
+            "rank": 3,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 337,
+            "score": 2.3555030822753906,
+            "rank": 4,
+            "entity": "廖化"
+          },
+          {
+            "entity_id": 300,
+            "score": 2.1292409896850586,
+            "rank": 5,
+            "entity": "大都督"
+          }
+        ]
+      }
+    },
+    {
+      "id": "338:14:111",
+      "head_id": 338,
+      "relation_id": 14,
+      "time_id": 111,
+      "head": "马岱",
+      "relation": "杀害",
+      "time": "《三国演义》第105回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -3.3612959384918213,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.182950973510742,
+            "rank": 2,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.296004772186279,
+            "rank": 3,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.364805221557617,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 329,
+            "score": -4.545389652252197,
+            "rank": 5,
+            "entity": "姜维"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 22,
+            "score": 2.9279685020446777,
+            "rank": 1,
+            "entity": "颍川"
+          },
+          {
+            "entity_id": 286,
+            "score": 2.4709525108337402,
+            "rank": 2,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 337,
+            "score": 2.430194854736328,
+            "rank": 3,
+            "entity": "廖化"
+          },
+          {
+            "entity_id": 364,
+            "score": 2.3585171699523926,
+            "rank": 4,
+            "entity": "韩琪"
+          },
+          {
+            "entity_id": 310,
+            "score": 2.312243700027466,
+            "rank": 5,
+            "entity": "吕蒙"
+          }
+        ]
+      }
+    },
+    {
+      "id": "330:3:112",
+      "head_id": 330,
+      "relation_id": 3,
+      "time_id": 112,
+      "head": "曹叡",
+      "relation": "任命",
+      "time": "《三国演义》第106回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -2.916306734085083,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.100522041320801,
+            "rank": 2,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.205205917358398,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.2243123054504395,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 336,
+            "score": -4.32041072845459,
+            "rank": 5,
+            "entity": "张翼"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 291,
+            "score": 2.340879440307617,
+            "rank": 1,
+            "entity": "魏延"
+          },
+          {
+            "entity_id": 338,
+            "score": 2.2637550830841064,
+            "rank": 2,
+            "entity": "马岱"
+          },
+          {
+            "entity_id": 286,
+            "score": 1.73225998878479,
+            "rank": 3,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 8,
+            "score": 1.397537112236023,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 125,
+            "score": 1.2369625568389893,
+            "rank": 5,
+            "entity": "孙策"
+          }
+        ]
+      }
+    },
+    {
+      "id": "339:12:112",
+      "head_id": 339,
+      "relation_id": 12,
+      "time_id": 112,
+      "head": "曹爽",
+      "relation": "任职",
+      "time": "《三国演义》第106回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -4.706476211547852,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.7910542488098145,
+            "rank": 2,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.90174674987793,
+            "rank": 3,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.98382568359375,
+            "rank": 4,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 329,
+            "score": -5.016637802124023,
+            "rank": 5,
+            "entity": "姜维"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 125,
+            "score": 1.8641269207000732,
+            "rank": 1,
+            "entity": "孙策"
+          },
+          {
+            "entity_id": 59,
+            "score": 1.8485690355300903,
+            "rank": 2,
+            "entity": "十常侍"
+          },
+          {
+            "entity_id": 281,
+            "score": 1.8274726867675781,
+            "rank": 3,
+            "entity": "沮授"
+          },
+          {
+            "entity_id": 298,
+            "score": 1.8253904581069946,
+            "rank": 4,
+            "entity": "樊城"
+          },
+          {
+            "entity_id": 320,
+            "score": 1.7653071880340576,
+            "rank": 5,
+            "entity": "汉中"
+          }
+        ]
+      }
+    },
+    {
+      "id": "286:14:112",
+      "head_id": 286,
+      "relation_id": 14,
+      "time_id": 112,
+      "head": "司马懿",
+      "relation": "杀害",
+      "time": "《三国演义》第106回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -4.8684868812561035,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 338,
+            "score": -5.011145114898682,
+            "rank": 2,
+            "entity": "马岱"
+          },
+          {
+            "entity_id": 329,
+            "score": -5.12678861618042,
+            "rank": 3,
+            "entity": "姜维"
+          },
+          {
+            "entity_id": 291,
+            "score": -5.167816162109375,
+            "rank": 4,
+            "entity": "魏延"
+          },
+          {
+            "entity_id": 336,
+            "score": -5.185879707336426,
+            "rank": 5,
+            "entity": "张翼"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 291,
+            "score": 2.984341859817505,
+            "rank": 1,
+            "entity": "魏延"
+          },
+          {
+            "entity_id": 338,
+            "score": 2.414433479309082,
+            "rank": 2,
+            "entity": "马岱"
+          },
+          {
+            "entity_id": 286,
+            "score": 1.947321891784668,
+            "rank": 3,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 121,
+            "score": 1.9120692014694214,
+            "rank": 4,
+            "entity": "文丑"
+          },
+          {
+            "entity_id": 288,
+            "score": 1.8313930034637451,
+            "rank": 5,
+            "entity": "袁熙"
+          }
+        ]
+      }
+    },
+    {
+      "id": "340:3:113",
+      "head_id": 340,
+      "relation_id": 3,
+      "time_id": 113,
+      "head": "曹芳",
+      "relation": "任命",
+      "time": "《三国演义》第107回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -3.964968681335449,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.1781182289123535,
+            "rank": 2,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.360918045043945,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.391066074371338,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 338,
+            "score": -4.456984519958496,
+            "rank": 5,
+            "entity": "马岱"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 125,
+            "score": 2.244758129119873,
+            "rank": 1,
+            "entity": "孙策"
+          },
+          {
+            "entity_id": 381,
+            "score": 2.2366769313812256,
+            "rank": 2,
+            "entity": "公孙渊"
+          },
+          {
+            "entity_id": 186,
+            "score": 2.061516284942627,
+            "rank": 3,
+            "entity": "吕公"
+          },
+          {
+            "entity_id": 221,
+            "score": 2.0546669960021973,
+            "rank": 4,
+            "entity": "曹昂"
+          },
+          {
+            "entity_id": 294,
+            "score": 1.9569787979125977,
+            "rank": 5,
+            "entity": "庞统"
+          }
+        ]
+      }
+    },
+    {
+      "id": "341:10:113",
+      "head_id": 341,
+      "relation_id": 10,
+      "time_id": 113,
+      "head": "夏侯霸",
+      "relation": "投靠",
+      "time": "《三国演义》第107回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -2.8934717178344727,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 23,
+            "score": -3.297305107116699,
+            "rank": 2,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 8,
+            "score": -3.422250509262085,
+            "rank": 3,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 338,
+            "score": -3.7131805419921875,
+            "rank": 4,
+            "entity": "马岱"
+          },
+          {
+            "entity_id": 13,
+            "score": -3.736902952194214,
+            "rank": 5,
+            "entity": "关羽"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 381,
+            "score": 3.430345296859741,
+            "rank": 1,
+            "entity": "公孙渊"
+          },
+          {
+            "entity_id": 286,
+            "score": 3.234010934829712,
+            "rank": 2,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 8,
+            "score": 3.0714080333709717,
+            "rank": 3,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 339,
+            "score": 2.798203706741333,
+            "rank": 4,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 330,
+            "score": 2.6072514057159424,
+            "rank": 5,
+            "entity": "曹叡"
+          }
+        ]
+      }
+    },
+    {
+      "id": "286:12:113",
+      "head_id": 286,
+      "relation_id": 12,
+      "time_id": 113,
+      "head": "司马懿",
+      "relation": "任职",
+      "time": "《三国演义》第107回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -5.058990001678467,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 339,
+            "score": -5.0875420570373535,
+            "rank": 2,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 338,
+            "score": -5.160346984863281,
+            "rank": 3,
+            "entity": "马岱"
+          },
+          {
+            "entity_id": 291,
+            "score": -5.360898017883301,
+            "rank": 4,
+            "entity": "魏延"
+          },
+          {
+            "entity_id": 381,
+            "score": -5.416855335235596,
+            "rank": 5,
+            "entity": "公孙渊"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 286,
+            "score": 2.9728782176971436,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 330,
+            "score": 2.9576165676116943,
+            "rank": 2,
+            "entity": "曹叡"
+          },
+          {
+            "entity_id": 381,
+            "score": 2.9251253604888916,
+            "rank": 3,
+            "entity": "公孙渊"
+          },
+          {
+            "entity_id": 145,
+            "score": 2.8796658515930176,
+            "rank": 4,
+            "entity": "于禁"
+          },
+          {
+            "entity_id": 291,
+            "score": 2.6577444076538086,
+            "rank": 5,
+            "entity": "魏延"
+          }
+        ]
+      }
+    },
+    {
+      "id": "341:13:113",
+      "head_id": 341,
+      "relation_id": 13,
+      "time_id": 113,
+      "head": "夏侯霸",
+      "relation": "交战",
+      "time": "《三国演义》第107回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -4.245066165924072,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.412803649902344,
+            "rank": 2,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.47715425491333,
+            "rank": 3,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.503795146942139,
+            "rank": 4,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 338,
+            "score": -4.641114711761475,
+            "rank": 5,
+            "entity": "马岱"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 381,
+            "score": 2.0763494968414307,
+            "rank": 1,
+            "entity": "公孙渊"
+          },
+          {
+            "entity_id": 286,
+            "score": 1.9019335508346558,
+            "rank": 2,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 125,
+            "score": 1.884242057800293,
+            "rank": 3,
+            "entity": "孙策"
+          },
+          {
+            "entity_id": 339,
+            "score": 1.7685394287109375,
+            "rank": 4,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 8,
+            "score": 1.6195918321609497,
+            "rank": 5,
+            "entity": "刘备"
+          }
+        ]
+      }
+    },
+    {
+      "id": "286:14:113",
+      "head_id": 286,
+      "relation_id": 14,
+      "time_id": 113,
+      "head": "司马懿",
+      "relation": "杀害",
+      "time": "《三国演义》第107回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -5.112928867340088,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 339,
+            "score": -5.183800220489502,
+            "rank": 2,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 338,
+            "score": -5.220974445343018,
+            "rank": 3,
+            "entity": "马岱"
+          },
+          {
+            "entity_id": 23,
+            "score": -5.375609397888184,
+            "rank": 4,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 329,
+            "score": -5.51124382019043,
+            "rank": 5,
+            "entity": "姜维"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 286,
+            "score": 2.794527769088745,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 339,
+            "score": 2.7111072540283203,
+            "rank": 2,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 381,
+            "score": 2.653561592102051,
+            "rank": 3,
+            "entity": "公孙渊"
+          },
+          {
+            "entity_id": 330,
+            "score": 2.590491533279419,
+            "rank": 4,
+            "entity": "曹叡"
+          },
+          {
+            "entity_id": 291,
+            "score": 2.4041829109191895,
+            "rank": 5,
+            "entity": "魏延"
+          }
+        ]
+      }
+    },
+    {
+      "id": "342:1:114",
+      "head_id": 342,
+      "relation_id": 1,
+      "time_id": 114,
+      "head": "诸葛恪",
+      "relation": "政权更替",
+      "time": "《三国演义》第108回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -3.378354549407959,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 339,
+            "score": -3.710888147354126,
+            "rank": 2,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.077800750732422,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.095382213592529,
+            "rank": 4,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.109563827514648,
+            "rank": 5,
+            "entity": "关羽"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 301,
+            "score": 2.6325976848602295,
+            "rank": 1,
+            "entity": "刘禅"
+          },
+          {
+            "entity_id": 286,
+            "score": 2.6232919692993164,
+            "rank": 2,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 339,
+            "score": 2.3952748775482178,
+            "rank": 3,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 382,
+            "score": 2.385279417037964,
+            "rank": 4,
+            "entity": "丞相"
+          },
+          {
+            "entity_id": 381,
+            "score": 2.3657052516937256,
+            "rank": 5,
+            "entity": "公孙渊"
+          }
+        ]
+      }
+    },
+    {
+      "id": "340:3:114",
+      "head_id": 340,
+      "relation_id": 3,
+      "time_id": 114,
+      "head": "曹芳",
+      "relation": "任命",
+      "time": "《三国演义》第108回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -1.5696717500686646,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 339,
+            "score": -3.4148318767547607,
+            "rank": 2,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 23,
+            "score": -3.8624799251556396,
+            "rank": 3,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 383,
+            "score": -4.367532253265381,
+            "rank": 4,
+            "entity": "郭淮"
+          },
+          {
+            "entity_id": 340,
+            "score": -4.373987674713135,
+            "rank": 5,
+            "entity": "曹芳"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 226,
+            "score": 2.409018039703369,
+            "rank": 1,
+            "entity": "侯成"
+          },
+          {
+            "entity_id": 122,
+            "score": 2.2819435596466064,
+            "rank": 2,
+            "entity": "赵云"
+          },
+          {
+            "entity_id": 236,
+            "score": 2.2605984210968018,
+            "rank": 3,
+            "entity": "袁谭"
+          },
+          {
+            "entity_id": 251,
+            "score": 2.226346969604492,
+            "rank": 4,
+            "entity": "纪灵"
+          },
+          {
+            "entity_id": 145,
+            "score": 2.1837100982666016,
+            "rank": 5,
+            "entity": "于禁"
+          }
+        ]
+      }
+    },
+    {
+      "id": "329:11:114",
+      "head_id": 329,
+      "relation_id": 11,
+      "time_id": 114,
+      "head": "姜维",
+      "relation": "击败",
+      "time": "《三国演义》第108回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 286,
+            "score": -4.396852016448975,
+            "rank": 1,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.419697284698486,
+            "rank": 2,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.465142726898193,
+            "rank": 3,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 339,
+            "score": -4.530311107635498,
+            "rank": 4,
+            "entity": "曹爽"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.563760280609131,
+            "rank": 5,
+            "entity": "关羽"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 301,
+            "score": 2.2431459426879883,
+            "rank": 1,
+            "entity": "刘禅"
+          },
+          {
+            "entity_id": 286,
+            "score": 2.233011484146118,
+            "rank": 2,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 340,
+            "score": 2.2171804904937744,
+            "rank": 3,
+            "entity": "曹芳"
+          },
+          {
+            "entity_id": 382,
+            "score": 2.0940749645233154,
+            "rank": 4,
+            "entity": "丞相"
+          },
+          {
+            "entity_id": 339,
+            "score": 2.072277545928955,
+            "rank": 5,
+            "entity": "曹爽"
+          }
+        ]
+      }
+    },
+    {
+      "id": "343:12:114",
+      "head_id": 343,
+      "relation_id": 12,
+      "time_id": 114,
+      "head": "司马师",
+      "relation": "任职",
+      "time": "《三国演义》第108回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 13,
+            "score": -4.732133388519287,
+            "rank": 1,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 286,
+            "score": -4.745472431182861,
+            "rank": 2,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 8,
+            "score": -4.770829200744629,
+            "rank": 3,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.835825443267822,
+            "rank": 4,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 339,
+            "score": -4.915586471557617,
+            "rank": 5,
+            "entity": "曹爽"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 340,
+            "score": 2.1709916591644287,
+            "rank": 1,
+            "entity": "曹芳"
+          },
+          {
+            "entity_id": 216,
+            "score": 2.168647527694702,
+            "rank": 2,
+            "entity": "太史慈"
+          },
+          {
+            "entity_id": 133,
+            "score": 2.1471424102783203,
+            "rank": 3,
+            "entity": "马腾"
+          },
+          {
+            "entity_id": 320,
+            "score": 2.109013080596924,
+            "rank": 4,
+            "entity": "汉中"
+          },
+          {
+            "entity_id": 125,
+            "score": 2.0858688354492188,
+            "rank": 5,
+            "entity": "孙策"
+          }
+        ]
+      }
+    },
+    {
+      "id": "344:12:114",
+      "head_id": 344,
+      "relation_id": 12,
+      "time_id": 114,
+      "head": "司马昭",
+      "relation": "任职",
+      "time": "《三国演义》第108回叙事快照",
+      "predictions": {
+        "tirgn": [
+          {
+            "entity_id": 8,
+            "score": -4.771196365356445,
+            "rank": 1,
+            "entity": "刘备"
+          },
+          {
+            "entity_id": 13,
+            "score": -4.77968692779541,
+            "rank": 2,
+            "entity": "关羽"
+          },
+          {
+            "entity_id": 286,
+            "score": -4.785576343536377,
+            "rank": 3,
+            "entity": "司马懿"
+          },
+          {
+            "entity_id": 23,
+            "score": -4.859532833099365,
+            "rank": 4,
+            "entity": "曹操"
+          },
+          {
+            "entity_id": 339,
+            "score": -4.959457874298096,
+            "rank": 5,
+            "entity": "曹爽"
+          }
+        ],
+        "regcn": [
+          {
+            "entity_id": 340,
+            "score": 2.5377728939056396,
+            "rank": 1,
+            "entity": "曹芳"
+          },
+          {
+            "entity_id": 150,
+            "score": 2.384695053100586,
+            "rank": 2,
+            "entity": "相国"
+          },
+          {
+            "entity_id": 282,
+            "score": 2.3746559619903564,
+            "rank": 3,
+            "entity": "曹营"
+          },
+          {
+            "entity_id": 345,
+            "score": 2.2955238819122314,
+            "rank": 4,
+            "entity": "文鸯"
+          },
+          {
+            "entity_id": 409,
+            "score": 2.2793705463409424,
+            "rank": 5,
+            "entity": "十万余箭"
+          }
+        ]
+      }
+    }
+  ],
+  "data_version": "v2_fulltext_review",
+  "run_name": "formal_v2_3seeds_r1"
+}

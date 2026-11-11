@@ -1,0 +1,89 @@
+{
+  "task": "same-snapshot completion; source is forecast train only",
+  "data_version": "v2_fulltext_review",
+  "source_sha256": {
+    "train.txt": "031715696221e97d9002be8cabc19fe2b5d97ec8b708ac139528e35dc9a26f05",
+    "stat.txt": "ba39ad6ca7ff5bc7ae6f991474f505dd70aa20973ca16dea4753266bf41e8342",
+    "entity_mapping.csv": "1d19d4298f9714df3eaf2a0cda02b496336ca36a21dc35b22c1e62809294752c",
+    "relation_mapping.csv": "6936cb92fd8df7765e475f4680c1da40e476b238095ce30f3451baa6895262f4",
+    "time_mapping.csv": "65d8a58ea5e731a9b02a624a8b95d7a1a98901530df6c3abfe23fb7e4bbdd19d"
+  },
+  "frozen_files": {
+    "code/completion_config.py": "16215b357436bb2a38b6f219ce26082e09c23efe69d5ba21baa83aed5e0000f6",
+    "code/completion_data.py": "ac7188202e8bae084824469b2ba4c32c24b674f8823ddf7ff88a6bc39512802e",
+    "code/completion_worker.py": "d15594014b8725c5bfa769e12df346fa1fb100b8f888beb0ce0a267b2fa3dfdd",
+    "code/formal_metrics.py": "b1af50f8156e231c8dbc553513a1a23bc9764c5fece6cf078ccbbd5017a2e79c",
+    "code/run_completion.py": "6222c99729b73518dac546a48dc7cf0947fa466626a297a7c9d9d32793afbbf7",
+    "entity_mapping.csv": "1d19d4298f9714df3eaf2a0cda02b496336ca36a21dc35b22c1e62809294752c",
+    "heldout_valid.txt": "2474d9629f303c2858223cc5a5afa1122f267bc9b5c0bf5f3d9dd3ee2222128a",
+    "models/regcn/rgcn/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/regcn/rgcn/knowledge_graph.py": "97b01bf4fa761ed2fb6a21941fe793986aa1abf65aa91a9ffc96e75d62c86666",
+    "models/regcn/rgcn/layers.py": "aea65ce47441286453f63e7913b1cc45e2ee692db214a835c744d1af199aa8f8",
+    "models/regcn/rgcn/model.py": "49b50e6e3c69d5f62335507738b5a72f3aefe469d69eff8605e3f7f54ac2ced0",
+    "models/regcn/rgcn/utils.py": "70cc167817c53b10c414e5626996cf6ddc2472d30ea7e1d4b882a4bef1fa7c4e",
+    "models/regcn/src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/regcn/src/decoder.py": "c81dedea06be40289e268d1b85aba2b8669079db63aa656bbe662cdc5741bc05",
+    "models/regcn/src/hyperparameter_range.py": "4386e4e0a45b7e91021fe182f1d640e5c6e2f4e3da833085066f715aface84e5",
+    "models/regcn/src/main.py": "bc4606527ad85d8d67d00e4beafca0442c70e0b096b616400ac497aa10dd517d",
+    "models/regcn/src/model.py": "c6562807407d3d4fdfb2a16a07f03730ee2407ad5fb9d56f138e34af1a3355b4",
+    "models/regcn/src/rrgcn.py": "467f00d73edb7df5830935bd48740500214d2bff980825b7dd4e899b4e8f4272",
+    "models/tirgn/rgcn/knowledge_graph.py": "c409462351d5105e9c063400b253362622edfb8a50ba089e7386adef85dbcd38",
+    "models/tirgn/rgcn/layers.py": "d3900fccaf1c0d849b9ef43c167d327c300c4fc8f3898216539e6f75d34d2450",
+    "models/tirgn/rgcn/model.py": "49b50e6e3c69d5f62335507738b5a72f3aefe469d69eff8605e3f7f54ac2ced0",
+    "models/tirgn/rgcn/utils.py": "8afda923eae5f21af003f381907d0acd6eee91fc41235fc7b24fe7b5a6229820",
+    "models/tirgn/rgcn/utils.py.sanguo_backup": "a82d008cd651759ee7981f4ff455c8019a37a289c665d3fb985cfba5da128a3b",
+    "models/tirgn/src/decoder.py": "d8af45f99e7c6a30c1d790f87c47c280fa738ee615b48587369bdbd21e9afd87",
+    "models/tirgn/src/get_history.py": "9c014389a04c4d6e506b2dcf13b69806d859c73ebc419a3d261ac3a6fcedc4a2",
+    "models/tirgn/src/hyperparameter_range.py": "9b8e61709f2c8511fa4aa8f68fb96733053f5f69cff0103eb9a72af744319eb6",
+    "models/tirgn/src/main.py": "7bbaa5318408ac8a2357301524229f235aca02a6282516b1bfade1ac692d2b98",
+    "models/tirgn/src/model.py": "c6562807407d3d4fdfb2a16a07f03730ee2407ad5fb9d56f138e34af1a3355b4",
+    "models/tirgn/src/rrgcn.py": "56e6d80a5559b57cae94ee2217cdab1490d421dd6a8211f9a84ae1a544260ce5",
+    "models/tirgn/src/光标），直接输入启动训练的终极指": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "observed.txt": "85974d63cf47e69ca205158132d52818c4c87058a745b31f20033f0ccd9df816",
+    "relation_mapping.csv": "6936cb92fd8df7765e475f4680c1da40e476b238095ce30f3451baa6895262f4",
+    "stat.txt": "ba39ad6ca7ff5bc7ae6f991474f505dd70aa20973ca16dea4753266bf41e8342",
+    "time_mapping.csv": "65d8a58ea5e731a9b02a624a8b95d7a1a98901530df6c3abfe23fb7e4bbdd19d"
+  },
+  "entities": 422,
+  "relations": 15,
+  "partition_seed": 20261110,
+  "target_fraction_per_holdout": 0.1,
+  "rows": {
+    "observed": 460,
+    "valid": 57,
+    "test": 57
+  },
+  "snapshots": {
+    "observed": 104,
+    "valid": 32,
+    "test": 32
+  },
+  "holdout_test_sha256": "a7de9ca2a383dd804f55924566b3344d33436aad8aee2eabe0937aa886306e4e",
+  "group": "all relations and directions for each timestamp and unordered entity pair",
+  "training": "hide one observed group per eligible snapshot per epoch; never expose either fixed holdout",
+  "context": "two immediately earlier observed snapshots and remaining edges at query time; TiRGN masks use only earlier facts",
+  "ranking": "both entity directions and relation prediction; tie by candidate ID; filter observed and evaluation labels at query time",
+  "frequency": "query-specific then broader frequency among observed facts at or before the query time",
+  "selection": "earliest epoch with highest validation filtered entity MRR",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 20,
+  "hits_at": [
+    1,
+    3,
+    10
+  ],
+  "history_length": 3,
+  "device": "CPU",
+  "threads": 2,
+  "timing_passes": 3,
+  "environment": {
+    "python": "3.9.25",
+    "numpy": "1.26.4",
+    "torch": "2.1.0",
+    "dgl": "1.1.3+cu118"
+  }
+}

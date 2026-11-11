@@ -1,0 +1,514 @@
+{
+  "question_sha256": "6f456a17d2a2bf3a6910d98fd696804787af9f93296d3607811c3bb3f310e2ef",
+  "corpus_sha256": "ed422e10c16c19af7ca7b09ca0320012e60776b3d7cb054769b8f7d9a19aea7d",
+  "results": [
+    {
+      "id": "A01",
+      "query": "典韦救过孟德吗？",
+      "kind": "answer",
+      "response": {
+        "answer": "是。资料记载的关系：典韦 —救援→ 曹操。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": [
+          {
+            "id": "F00327",
+            "fact": "典韦 —救援→ 曹操",
+            "time": "《三国演义》第11回叙事快照",
+            "chapter": "第11回",
+            "chunk": "chapter_011_chunk_10",
+            "quote": "典韦杀散敌军，救出曹操，众将随后也到，寻路归寨。"
+          },
+          {
+            "id": "F00330",
+            "fact": "典韦 —救援→ 曹操",
+            "time": "《三国演义》第12回叙事快照",
+            "chapter": "第12回",
+            "chunk": "chapter_012_chunk_03",
+            "quote": "典韦回马来救，恰好夏侯渊亦到。两个同救起曹操，突火而出。操乘渊马，典韦杀条大路而走。直混战到天明，操方回寨。众将拜伏问安，操仰面笑曰：「误中匹夫之计，吾必当报之！」郭嘉曰：「计可速发。」操曰：「今只将计就计：诈言我"
+          },
+          {
+            "id": "F00364",
+            "fact": "典韦 —救援→ 曹操",
+            "time": "《三国演义》第16回叙事快照",
+            "chapter": "第16回",
+            "chunk": "chapter_016_chunk_10",
+            "quote": "却说曹操赖典韦当住寨门，乃得从寨后上马逃奔，只有曹安民步随，操右臂中了一箭，马亦中了三箭。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A02",
+      "query": "云长斩了文丑吗？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A03",
+      "query": "谁击败过陆康？",
+      "kind": "answer",
+      "response": {
+        "answer": "资料记载的关系：孙策 —击败→ 陆康。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": [
+          {
+            "id": "F00359",
+            "fact": "孙策 —击败→ 陆康",
+            "time": "《三国演义》第15回叙事快照",
+            "chapter": "第15回",
+            "chunk": "chapter_015_chunk_02",
+            "quote": "，不可与命争也。」吕布令人送粮米缎疋。自此两家和好，不在话下。却说袁术大宴将士于寿春。人报孙策征庐江太守陆康，得胜而回。术唤策至，策拜于堂下。问劳已毕，便令侍坐饮宴。原来孙策自父丧之后，退居江南，礼贤下士，后因陶谦与策母舅丹阳太守吴璟不和，策乃移母并家属居于曲阿，自己却投袁术。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A04",
+      "query": "赵子龙救过黄忠吗？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A05",
+      "query": "袁谭护送过玄德吗？",
+      "kind": "answer",
+      "response": {
+        "answer": "是。资料记载的关系：袁谭 —护送→ 刘备。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": [
+          {
+            "id": "F00422",
+            "fact": "袁谭 —护送→ 刘备",
+            "time": "《三国演义》第24回叙事快照",
+            "chapter": "第24回",
+            "chunk": "chapter_024_chunk_04",
+            "quote": "开门相迎，接入公廨，细问其故。玄德备言兵败相投之意。谭乃留玄德于馆驿中住下，发书报父袁绍；一面差本州人马，护送玄德。至平原界口，袁绍亲自引众出邺邵三十里迎接玄德。玄德拜谢，绍忙答礼曰：「昨为小儿抱病，有失救援，于心怏怏不安。今幸得相见，大慰平生渴想之思。」玄德曰：「孤穷刘备"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A06",
+      "query": "谁追赶了董卓？",
+      "kind": "answer",
+      "response": {
+        "answer": "资料记载的关系：曹操 —追击→ 董卓。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": [
+          {
+            "id": "F00183",
+            "fact": "曹操 —追击→ 董卓",
+            "time": "第六回叙事阶段",
+            "chapter": "第6回",
+            "chunk": "chapter_006_chunk_04",
+            "quote": "」遂自引兵万余，领夏侯惇，夏侯渊，曹仁，曹洪，李典，乐进，星夜来赶董卓。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A07",
+      "query": "吕布杀了董卓吗？",
+      "kind": "answer",
+      "response": {
+        "answer": "是。资料记载的关系：吕布 —斩杀→ 董卓。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": [
+          {
+            "id": "F00254",
+            "fact": "吕布 —斩杀→ 董卓",
+            "time": "第九回叙事阶段",
+            "chapter": "第9回",
+            "chunk": "chapter_009_chunk_06",
+            "quote": "迎谒于道。李肃手执宝剑扶车而行。到北掖门，军兵尽挡在门外，独有御车二十余人同入。董卓遥见王允等各执宝剑立于殿门，惊问肃曰：「持剑是何意？」肃不应，推车直入。王允大呼曰：「反贼至此，武何在？」两旁转出百余人，持戟挺槊刺之。卓裹甲不入，伤臂堕车，大呼曰：「吾儿奉先何在？」吕布从车后厉声出曰：「有诏讨贼！」一戟直刺咽喉，李肃早割头在手。吕布左手持戟，右手怀中取诏，大呼曰：「奉诏讨贼臣董卓，其余不问！」将吏皆呼万岁。后人有诗叹董卓曰：伯业成时为帝不，不成且作富家郎。谁知天意无私，郿坞方成已灭亡。却说当下吕布大呼曰：「助卓为虐者，皆李儒也！谁可擒之？」李肃应声愿往。忽听朝门外发喊，人报李儒家奴已将李儒绑䌸来献。王允命䌸赴市曹斩之；又将董卓尸首，号令通衢。卓尸肥胖，看尸军士以火置其脐中为灯，膏油满地。百姓过者，莫不手掷其头，足践其尸。王允又命吕布同皇甫嵩、李肃领兵五万，至郿坞抄籍董卓家产人口。却说李傕，郭汜，张济，樊稠闻董卓已死，吕布将至，便引了飞熊军"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A08",
+      "query": "孔明何时斩杀陈式？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A09",
+      "query": "公孙瓒推荐了谁？",
+      "kind": "answer",
+      "response": {
+        "answer": "资料记载的关系：公孙瓒 —推荐→ 刘备。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": [
+          {
+            "id": "F00227",
+            "fact": "公孙瓒 —推荐→ 刘备",
+            "time": "第七回叙事阶段",
+            "chapter": "第7回",
+            "chunk": "chapter_007_chunk_05",
+            "quote": "瓒即日班师，又表荐刘玄德为平原相。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A10",
+      "query": "云长击败过袁术吗？",
+      "kind": "answer",
+      "response": {
+        "answer": "是。资料记载的关系：关羽 —击败→ 袁术。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": [
+          {
+            "id": "F00371",
+            "fact": "关羽 —击败→ 袁术",
+            "time": "《三国演义》第17回叙事快照",
+            "chapter": "第17回",
+            "chunk": "chapter_017_chunk_03",
+            "quote": "军，走不上数里，山背后一彪军出，截住去路。当先一将，乃关云长也。大叫：「反贼！还不受死！」袁术慌走，余众四散奔逃，被云长大杀了一阵。袁术收拾败军，奔回淮南去了。吕布得胜，邀请云长并杨奉、韩暹等一行人马到徐州，大排筵宴款待。军士都有犒赏。次日，云长辞归。布保韩暹为沂都牧。杨奉为琅琊牧，商议欲"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A11",
+      "query": "翼德斩杀了纪灵吗？",
+      "kind": "answer",
+      "response": {
+        "answer": "是。资料记载的关系：张飞 —斩杀→ 纪灵。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": [
+          {
+            "id": "F00401",
+            "fact": "张飞 —斩杀→ 纪灵",
+            "time": "《三国演义》第21回叙事快照",
+            "chapter": "第21回",
+            "chunk": "chapter_021_chunk_07",
+            "quote": "至，乃引关，张，朱灵，路昭，五万军出，正迎着先锋纪灵至。张飞更不打话，直取纪灵。斗无十合，张飞大喝一声，刺纪灵于马下。败军奔走，袁术自引军来斗。玄德分兵三路，──朱灵，路昭在左，关，张在右，玄德自引兵居中，──与术相见，在门旗下责备曰：「汝反逆不道，吾今奉明诏前来讨汝。汝当束"
+          }
+        ]
+      }
+    },
+    {
+      "id": "A12",
+      "query": "赵云救援刘禅在哪几回？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A13",
+      "query": "公瑾在哪一回去世？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A14",
+      "query": "张翼德遇害是第几回？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A15",
+      "query": "士元死在什么地方？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A16",
+      "query": "赵子龙是怎么去世的？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A17",
+      "query": "袁绍是在哪一回去世的？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A18",
+      "query": "吕奉先是怎么死的？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A19",
+      "query": "伯符去世时多少岁？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "A20",
+      "query": "凤雏指的是谁？",
+      "kind": "answer",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "C01",
+      "query": "周瑜卧病时的体温是多少？",
+      "kind": "clue",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "C02",
+      "query": "刘备在永安宫染病的具体病原体是什么？",
+      "kind": "clue",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "C03",
+      "query": "射向庞统的每支乱箭分别是谁射出的？",
+      "kind": "clue",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "C04",
+      "query": "范疆和张达刺杀张飞所用的短刀有多长？",
+      "kind": "clue",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "C05",
+      "query": "袁绍吐血时量出来的血压是多少？",
+      "kind": "clue",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "S01",
+      "query": "秦始皇给刘禅发过电子邮件吗？",
+      "kind": "insufficient",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "S02",
+      "query": "司马懿用哪款智能手机？",
+      "kind": "insufficient",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "S03",
+      "query": "诸葛亮的身份证号码是多少？",
+      "kind": "insufficient",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。 当前支持人物、关系和有明确对象的事件问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "S04",
+      "query": "孙权杀了吕布吗？",
+      "kind": "correction",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": []
+      }
+    },
+    {
+      "id": "S05",
+      "query": "曹操亲手杀死了袁绍吗？",
+      "kind": "correction",
+      "response": {
+        "answer": "现有资料不足，无法回答这个问题。",
+        "method": "事实问答",
+        "notice": "",
+        "retrieval_backend": "local",
+        "query_parser": "rule",
+        "completion": null,
+        "sources": []
+      }
+    }
+  ]
+}
